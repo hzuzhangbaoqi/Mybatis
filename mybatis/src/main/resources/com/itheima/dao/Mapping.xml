@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<mapper namespace="com.itheima.dao.ICourseDao">
+    <select id="findAll" resultType="com.itheima.domain.Course">
+        select * from course
+    </select>
+
+    <select id="findOne" resultType="com.itheima.domain.Course" parameterType="String">
+        select * from course where c_id = ?
+    </select>
+</mapper>
